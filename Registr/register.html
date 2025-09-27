@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل مستخدم جديد</title>
+  <!-- ربط ملف التنسيق -->
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <div class="container">
+    <h2>تَسْجِيلُ مُسْتَخْدِمٍ جَدِيدٍ</h2>
+
+    <!-- النموذج الخاص بالتسجيل -->
+    <form id="registerForm">
+      
+      <!-- اسم المستخدم -->
+      <div class="input-group">
+        <label for="username">اِسْمُ الْمُسْتَخْدِمِ</label>
+        <input type="text" id="username" placeholder="اُكْتُبْ اِسْمَ الْمُسْتَخْدِمِ" required>
+      </div>
+
+      <!-- الاسم الكامل -->
+      <div class="input-group">
+        <label for="fullname">الِاسْمُ الْكَامِلُ</label>
+        <input type="text" id="fullname" placeholder="اُكْتُبْ الِاسْمَ الْكَامِلَ" required>
+      </div>
+
+      <!-- البريد الإلكتروني -->
+      <div class="input-group">
+        <label for="email">الْبَرِيدُ الْإِلِكْتُرُونِيُّ</label>
+        <input type="email" id="email" placeholder="اُكْتُبْ بَرِيدَكَ الْإِلِكْتُرُونِيَّ" required>
+      </div>
+
+      <!-- كلمة المرور -->
+      <div class="input-group">
+        <label for="password">كَلِمَةُ الْمُرُورِ</label>
+        <input type="password" id="password" placeholder="اُكْتُبْ كَلِمَةَ الْمُرُورِ" required>
+      </div>
+
+      <!-- تأكيد كلمة المرور -->
+      <div class="input-group">
+        <label for="confirmPassword">تَأْكِيدُ كَلِمَةِ الْمُرُورِ</label>
+        <input type="password" id="confirmPassword" placeholder="أَعِدْ كِتَابَةَ كَلِمَةِ الْمُرُورِ" required>
+      </div>
+
+      <!-- السّن -->
+      <div class="input-group">
+        <label for="age">السِّنُّ (كَالْمَوْجُودِ فِي الْبِطَاقَةِ)</label>
+        <input type="number" id="age" placeholder="اُكْتُبْ سِنَّكَ" min="5" max="100" required>
+      </div>
+
+      <!-- المرحلة الدراسية -->
+      <div class="input-group">
+        <label for="stage">الْمَرْحَلَةُ الدِّرَاسِيَّةُ</label>
+        <select id="stage" required>
+          <option value="">--اِخْتَرِ الْمَرْحَلَةَ--</option>
+          <option value="ابتدائية">الْمَرْحَلَةُ الِابْتِدَائِيَّةُ</option>
+          <option value="ثانوية">الْمَرْحَلَةُ الثَّانَوِيَّةُ</option>
+          <option value="جامعية">الْمَرْحَلَةُ الْجَامِعِيَّةُ</option>
+          <option value="خريج">خَرِّيجٌ</option>
+        </select>
+      </div>
+
+      <!-- زر التسجيل -->
+       <a href="D:/JS_Learning/homePage_2/Home.html" class="btn">تَسْجِيلٌ</a>
+
+      <!-- <button type="submit" class="btn" href="D:\JS_Learning\homePage\home.html">تَسْجِيلٌ</button> -->
+    </form>
+  </div>
+
+  <!-- ربط ملف الجافاسكربت -->
+  <script src="register.js"></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+/* إعدادات عامة */
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  color: #333;
+  direction: rtl;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0.25rem 0;
+}
+
+/* نص ثانوي */
+.muted {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* الغلاف العام */
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* الشريط العلوي */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  background: #4f46e5;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.icon-btn:hover {
+  background-color: #f3f4f6;
+}
+
+/* الملف الشخصي */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+
+.avatar {
+  background: #4f46e5;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-info {
+  text-align: right;
+}
+
+.profile-name {
+  font-weight: 700;
+}
+
+/* Hero section */
+.hero {
+  padding: 2rem 1rem;
+  background: #eef2ff;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.hero-text {
+  margin-bottom: 1rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary,
+.btn-outline {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #4338ca;
+}
+
+.btn-outline {
+  background: #fff;
+  border: 1px solid #4f46e5;
+  color: #4f46e5;
+}
+
+.btn-outline:hover {
+  background: #f5f3ff;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-footer-left {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.add-card {
+  background: #f3f4f6;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-card:hover {
+  background: #e5e7eb;
+}
+
+.add-card-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.plus {
+  font-size: 2rem;
+  color: #4f46e5;
+}
+
+.add-card-text h3 {
+  margin: 0;
+}
+
+/* Courses list */
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.course-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.course-thumb {
+  background: #4f46e5;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-meta h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none; /* مخفية افتراضيًا */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 500px;
+  max-width: 90%;
+}
+
+.row {
+  margin: 1rem 0;
+}
+
+.input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 0.25rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Progress area */
+.analysis-area {
+  margin-top: 1.5rem;
+}
+
+.progress {
+  background: #e5e7eb;
+  border-radius: 8px;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: #4f46e5;
+  transition: width 0.3s ease;
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
