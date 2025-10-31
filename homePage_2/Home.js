@@ -80,4 +80,162 @@
     document.addEventListener('keydown', (e)=>{
       if(e.key === 'Escape') closeModal();
     });
-  
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+// ==========================================
+// الوضع الليلي/النهاري مع تغيير اللوجو
+// ==========================================
+
+
+
+(function(){
+  const KEY = 'mode';
+  const body = document.body;
+  const toggle = document.getElementById('toggle');
+  const circle = document.getElementById('circle');
+  const logo = document.getElementById('logo'); // ضع هنا id الصورة الرئيسية
+
+  // تطبيق الوضع المحفوظ أو الوضع الافتراضي
+  const saved = localStorage.getItem(KEY) || 'light-mode';
+  applyMode(saved, false);
+
+  function toggleMode(){
+    const isDark = body.classList.contains('dark-mode');
+    const next = isDark ? 'light-mode' : 'dark-mode';
+    applyMode(next, true);
+  }
+
+  function applyMode(mode, save){
+    if(mode === 'dark-mode'){
+      body.classList.remove('light-mode'); body.classList.add('dark-mode');
+      circle.textContent = '🌙';
+      if(logo) logo.src = 'img//Gemini_Generated_Image_ikgx5sikgx5sikgx.png'; // الصورة البديلة
+      toggle.setAttribute('aria-pressed','true');
+    } else {
+      body.classList.remove('dark-mode'); body.classList.add('light-mode');
+      circle.textContent = '☀️';
+      if(logo) logo.src = 'img//Gemini_Generated_Image_xtah4kxtah4kxtah.png'; // الصورة الأصلية
+      toggle.setAttribute('aria-pressed','false');
+    }
+    if(save) localStorage.setItem(KEY, mode);
+  }
+
+  toggle.addEventListener('click', toggleMode);
+  toggle.addEventListener('keydown', e => { 
+    if(e.key === 'Enter' || e.key === ' ') { 
+      e.preventDefault(); 
+      toggleMode(); 
+    } 
+  });
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==========================================
+//   الأقسام (أولى وتانية وتالته ثانوي)
+// ==========================================
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  function setupToggle(btnSelector, wrapperSelector) {
+    const btn = document.querySelector(btnSelector);
+    const section = document.querySelector(wrapperSelector);
+    let isOpen = false;
+
+    section.style.overflow = "hidden";
+    section.style.maxHeight = "0";
+    section.style.display = "none";
+
+
+    btn.addEventListener("click", function () {
+      if (!isOpen) {
+        section.style.display = "block";
+        section.style.maxHeight = section.scrollHeight + "px";
+        const rect = section.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const target = rect.top + scrollTop - 20;
+        window.scrollTo({ top: target, behavior: "smooth" });
+        isOpen = true;
+      } else {
+        section.style.maxHeight = "0";
+        setTimeout(() => { section.style.display = "none"; }, 500);
+        isOpen = false;
+      }
+    });
+
+    window.addEventListener("resize", function () {
+      if (isOpen) {
+        section.style.maxHeight = section.scrollHeight + "px";
+      }
+    });
+  }
+
+  // ربط كل الزرار بالغلاف
+
+  setupToggle(".toggle-btn", ".materials-wrapper"); //اولي ثانوي
+  setupToggle(".toggle-btn2", ".materials-wrapper2");//تانيه ثانوي
+  setupToggle(".toggle-btn4", ".materials-wrapper4");//تالته ثانوي
+});
+
+
+
+
+
+
+
+
+
+
+
+
+// زر بتاع الاسكرول
+
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    scrollTopBtn.classList.add("show");
+  } else {
+    scrollTopBtn.classList.remove("show");
+  }
+});
+
+scrollTopBtn.addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
