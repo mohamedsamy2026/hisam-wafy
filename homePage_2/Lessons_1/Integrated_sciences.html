@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الفيزياء</title>
+
+<style>
+
+/* الوضع الليلي والنهاري */
+body.light-mode { background-color: #e0f2ff; }
+body.dark-mode { background-color: #0b132b; }
+
+/* الزر */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 30px;
+}
+
+.toggle {
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(45deg, #a2d9ff, #f7d794);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* الدائرة */
+.circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.dark-mode .toggle { background: linear-gradient(45deg, #3a3a3a, #222); }
+.dark-mode .circle { left: 43px; background: #222; color: #ffdd59; }
+
+/* اللوجو */
+.c {
+  max-width: 170px;
+  border-radius: 50%;
+  transition: 0.7s;
+}
+.c:hover { scale: 1.1; }
+
+/* النبذة */
+.about {
+  padding: 20px;
+  border-radius: 15px;
+  text-align: right;
+  color: #000000;
+  background-color: #4c64ab;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 600;
+  margin-bottom: 100px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #39618b, #35b9bd);
+}
+
+/* قسم المحاضرات */
+.lectures {
+  text-align: right;
+}
+
+h3 {
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 0px;
+  display: block;
+  background-color: rgb(136, 233, 162);
+  padding: 50px 150px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+h3:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #25578d, #b1c629);
+}
+
+/* الحاوية الرئيسية */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 50px 80px;
+}
+
+/* الروابط داخل قسم المحاضرات */
+.lectures a {
+  display: block;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: rgb(255, 255, 255);
+  padding: 50px 200px;
+  border-radius: 12px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  font-size: 20px;
+}
+
+.lectures a:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+/* قسم المصادر */
+.sources {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.sources h2 {
+  font-size: 30px;
+  color: #ffffff;
+  background-color: rgb(38, 168, 94);
+  border-radius: 12px;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+}
+
+.book-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.book-images img {
+  width: 250px;
+  padding: 30px;
+  border-radius: 20%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.book-images img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+</style>
+</head>
+
+<body class="light-mode">
+
+<!-- الشعار والزر -->
+<div class="container">
+  <img id="logo" class="c" src="img//Gemini_Generated_Image_xtah4kxtah4kxtah.png">
+  <div class="toggle" id="toggle">
+    <div class="circle" id="circle">☀️</div>
+  </div>
+</div>
+
+<!-- النبذة + المحاضرات -->
+<div class="main-content">
+  <div class="about">
+    <h2>نبذة عن مادة الفيزياء</h2>
+    <p>الفيزياء....................................................................</p>
+  </div>
+
+  <h3>قسم المحاضرات — ماده الفيزياء</h3>
+  <div class="lectures">
+    <a href="">محاضره 1</a>
+    <a href="">محاضره 2</a>
+    <a href="">محاضره 3</a>
+    <a href="">محاضره 4</a>
+    <a href="">محاضره 5</a>
+    <a href="">محاضره 6</a>
+  </div>
+</div>
+
+<!-- قسم المصادر -->
+<div class="sources">
+  <h2>تم الاستعانة بالمصادر التالية:</h2>
+  <div class="book-images">
+    
+    <!-- حط بقا الصور الي انت عايزها يا هندسه  -->
+    <img src="img/" alt="كتاب 1">
+    <img src="img/" alt="كتاب 2">
+    <img src="img/" alt="كتاب 3">
+  </div>
+</div>
+
+<script>
+// الوضع الليلي والنهاري
+(function() {
+  const KEY = 'mode';
+  const body = document.body;
+  const toggle = document.getElementById('toggle');
+  const circle = document.getElementById('circle');
+  const logo = document.getElementById('logo');
+  const saved = localStorage.getItem(KEY) || 'light-mode';
+  apply(saved, false);
+
+  function toggleMode() {
+    const next = body.classList.contains('dark-mode') ? 'light-mode' : 'dark-mode';
+    apply(next, true);
+  }
+
+  function apply(mode, save) {
+    if (mode === 'dark-mode') {
+      body.classList.replace('light-mode', 'dark-mode');
+      circle.textContent = '🌙';
+      logo.src = 'img//Gemini_Generated_Image_ikgx5sikgx5sikgx.png';
+    } else {
+      body.classList.replace('dark-mode', 'light-mode');
+      circle.textContent = '☀️';
+      logo.src = 'img//Gemini_Generated_Image_xtah4kxtah4kxtah.png';
+    }
+    if (save) localStorage.setItem(KEY, mode);
+  }
+
+  toggle.addEventListener('click', toggleMode);
+})();
+</script>
+
+</body>
+</html>
