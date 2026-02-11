@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // دالة لتشغيلها عند النقر على زر "إضافة مادة جديدة"
 function addNewCourse() {
     alert("سيتم نقلك إلى صفحة إضافة مادة جديدة!");
@@ -10,4 +11,18 @@ function addNewCourse() {
 document.addEventListener('DOMContentLoaded', () => {
     console.log("الصفحة الرئيسية لتطبيق بِتشَا جاهزة!");
     // هنا يمكن إضافة وظائف JavaScript أخرى بعد تحميل DOM بالكامل
+=======
+// دالة لتشغيلها عند النقر على زر "إضافة مادة جديدة"
+function addNewCourse() {
+    alert("سيتم نقلك إلى صفحة إضافة مادة جديدة!");
+    // هنا يمكنك إضافة منطق حقيقي لإعادة توجيه المستخدم
+    // مثال: window.location.href = "add_course.html";
+}
+
+// يمكنك إضافة أي منطق JavaScript آخر هنا للصفحة الرئيسية
+// على سبيل المثال، لتفاعل مع البطاقات أو تحميل البيانات بشكل ديناميكي
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("الصفحة الرئيسية لتطبيق بِتشَا جاهزة!");
+    // هنا يمكن إضافة وظائف JavaScript أخرى بعد تحميل DOM بالكامل
+>>>>>>> 091232105b95c2c5c310e0f3ee2ba2863dc7d166
 });

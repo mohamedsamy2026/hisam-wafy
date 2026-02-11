@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* إعدادات عامة */
 body {
@@ -1234,4 +1235,1242 @@ background: linear-gradient(135deg, #ff6a00, #ee0979);
   60% {
     transform: translateY(-4px);
   }
+=======
+
+/* إعدادات عامة */
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  color: #333;
+  direction: rtl;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0.25rem 0;
+}
+
+/* نص ثانوي */
+.muted {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* الغلاف العام */
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* الشريط العلوي */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  background: #4f46e5;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.icon-btn:hover {
+  background-color: #f3f4f6;
+}
+
+/* الملف الشخصي */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+
+.avatar {
+  background: #4f46e5;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-info {
+  text-align: right;
+}
+
+.profile-name {
+  font-weight: 700;
+}
+
+/* Hero section */
+.hero {
+  padding: 2rem 1rem;
+  background: #eef2ff;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.hero-text {
+  margin-bottom: 1rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary,
+.btn-outline {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #4338ca;
+}
+
+.btn-outline {
+  background: #fff;
+  border: 1px solid #4f46e5;
+  color: #4f46e5;
+}
+
+.btn-outline:hover {
+  background: #f5f3ff;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-footer-left {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.add-card {
+  background: #f3f4f6;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-card:hover {
+  background: #e5e7eb;
+}
+
+.add-card-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.plus {
+  font-size: 2rem;
+  color: #4f46e5;
+}
+
+.add-card-text h3 {
+  margin: 0;
+}
+
+/* Courses list */
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.course-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.course-thumb {
+  background: #4f46e5;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-meta h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 500px;
+  max-width: 90%;
+}
+
+.row {
+  margin: 1rem 0;
+}
+
+.input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 0.25rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Progress area */
+.analysis-area {
+  margin-top: 1.5rem;
+}
+
+.progress {
+  background: #e5e7eb;
+  border-radius: 8px;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: #4f46e5;
+  transition: width 0.3s ease;
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* شغلي محمد سامي */
+
+
+
+/* الصورة */
+/* اللوجو */
+
+.c {
+  max-width: 170px; 
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  transition: all 0.7s;
+}
+
+
+.c:hover{
+  scale: calc(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* زر الوضع الليلي والنهاري */
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px;
+  margin-left: 30px ;
+  margin-right: 30px ;
+
+}
+
+
+.toggle {
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(45deg, #a2d9ff, #f7d794);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+}
+
+/* الدائرة */
+
+.circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: left 0.4s, background 0.4s, color 0.4s;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+
+
+.dark-mode .toggle {
+  background: linear-gradient(45deg, #3a3a3a, #222);
+}
+
+.dark-mode .circle {
+  left: 43px;
+  background: #222;
+  color: #ffdd59;
+}
+
+/* الخلفية فقط */
+
+body.light-mode {
+  background-color: #eaf6ff;
+}
+
+body.dark-mode {
+  background-color: #0b132b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* اولي ثانوي */
+
+
+/* زر العرض */
+.toggle-btn {
+  display: block;
+  margin: 80px auto;
+  margin-bottom: 40px;
+  padding: 25px 150px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #007bff;
+  color:white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* قسم المحتوى المخفي */
+
+.materials-wrapper {
+  overflow: hidden;
+
+  transition: max-height 0.5s ease;
+}
+
+
+
+
+
+
+
+/* اولي ثانوي كل الاقسام */
+
+.materials1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
+
+.materials1 .h2 {
+  font-size: 28px;
+  color: #000;
+  background-color: wheat;
+  padding: 15px 90px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s ;
+      margin-bottom: 30px;
+
+}
+
+
+.materials1:hover .h2{
+  background-color:rgb(232, 195, 127) ;
+}
+
+.materials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.materials-container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.materials-container li {
+  background: #b6c4da;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 30px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-width: 180px;
+}
+
+.materials-container li:hover {
+  background: #007bff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.materials-container li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.materials-container li:hover a {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+ 
+/* hr  منسق*/
+.b {
+  border: none;                 
+  height:7px; 
+  width: 70%;    
+  margin: 0 auto;
+  background: linear-gradient(to right, #6c5ce7, #28a745); 
+  border-radius: 5px;           
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* تانيه ثانوي */
+
+
+/* زر العرض */
+.toggle-btn2 {
+  display: block;
+  margin: 80px auto;
+  margin-bottom: 40px;
+  padding: 25px 150px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #28a745;  
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.toggle-btn2:hover {
+  background-color: #1e7e34;
+  transform: scale(1.05);
+}
+
+/* قسم المحتوى المخفي */
+.materials-wrapper2 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+
+
+
+
+/* تانيه ثانوي القسم العلمي */
+
+.materials2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
+
+.materials2 .h2 {
+  font-size: 28px;
+  color: #fff;                
+  background-color: #6c5ce7;  
+  padding: 15px 90px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s ;
+      margin-bottom: 30px;
+
+}
+
+
+.materials2:hover .h2{
+  background-color: #5a4bcf;  
+}
+
+.materials-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.materials-container2 ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.materials-container2 li {
+  background: #ffeaa7;  
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 30px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-width: 180px;
+}
+
+.materials-container2 li:hover {
+  background: #007bff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.materials-container2 li a {
+  text-decoration: none;
+  color: black;  
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.materials-container2 li:hover a {
+  color: white; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تانيه ثانوي */
+
+
+/* زر العرض */
+.toggle-btn2 {
+  display: block;
+  margin: 80px auto;
+  margin-bottom: 40px;
+  padding: 25px 150px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #28a745;  
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.toggle-btn2:hover {
+  background-color: #1e7e34; /* أخضر غامق عند الهور */
+  transform: scale(1.05);
+}
+
+/* قسم المحتوى المخفي */
+.materials-wrapper2 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+
+
+
+
+
+
+/* تانيه ثانوي القسم العلمي */
+
+.materials2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
+
+.materials2 .h2 {
+  font-size: 28px;
+  color: #fff;                
+  background-color: #6c5ce7;  
+  padding: 15px 90px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s ;
+      margin-bottom: 30px;
+
+}
+
+
+.materials2:hover .h2{
+  background-color: #5a4bcf;  
+}
+
+.materials-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.materials-container2 ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.materials-container2 li {
+  background: #ffeaa7;  
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 30px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-width: 180px;
+}
+
+.materials-container2 li:hover {
+  background: #007bff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.materials-container2 li a {
+  text-decoration: none;
+  color: black;  
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.materials-container2 li:hover a {
+  color: white; 
+}
+
+
+
+
+
+
+
+
+/* تانيه ثانوي قسم ادبي */
+
+.materials3 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.materials3 .h2 {
+  font-size: 28px;
+  color: #ffffff;             
+  background-color: #1b498e;   
+  padding: 15px 90px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s;
+    margin-bottom: 30px;
+
+}
+
+.materials3:hover .h2 {
+  background-color: #186be8;  
+}
+
+.materials-container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.materials-container3 ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.materials-container3 li {
+  background: #49b7b5;        
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 30px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  min-width: 180px;
+}
+
+.materials-container3 li:hover {
+  color: white;
+  background: #0f384e;         
+  transform: translateY(-5px);
+}
+
+.materials-container3 li a {
+  text-decoration: none;
+  color: black;             
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.materials-container3 li:hover a {
+  color: white;            
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تالته ثانوي    */
+
+/* زر العرض */
+
+/* زر تالته ثانوي */
+.toggle-btn4 {
+  display: block;
+  margin: 80px auto;
+  margin-bottom: 40px;
+  padding: 25px 150px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #ff5722;  
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.toggle-btn4:hover {
+  background-color: #fb4710; 
+  transform: scale(1.05);
+
+}
+
+/* قسم المحتوى المخفي */
+.materials-wrapper4 {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+/* تالته ثانوي القسم علمي رياضه */
+.materials4 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.materials4 .h2 {
+  font-size: 28px;
+  color: #ffffff;             
+  background-color: #944436;   
+  padding: 15px 90px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+}
+
+.materials4:hover .h2 {
+  background-color: #894033;   
+}
+
+.materials-container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.materials-container4 ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.materials-container4 li {
+  background: #dde85f;        
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 30px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  min-width: 180px;
+}
+
+.materials-container4 li:hover {
+  background: #beca43;        
+  transform: translateY(-5px);
+}
+
+.materials-container4 li a {
+  text-decoration: none;
+  color: #000;              
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.materials-container4 li:hover a {
+  color: rgb(0, 0, 0);  
+  font-weight: bold;            
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تالته ثانوي القسم علمي علوم  */
+
+
+
+
+
+
+.materials5 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.materials5 .h2 {
+  font-size: 28px;
+  color: #ffffff;             
+  background-color: #1d8f4c;   
+  padding: 15px 90px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s;
+    margin-bottom: 30px;
+
+}
+
+.materials5:hover .h2 {
+  background-color: #15783e;  
+}
+
+.materials-container5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.materials-container5 ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.materials-container5 li {
+  background: #5281e0;        
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 30px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  min-width: 180px;
+}
+
+.materials-container5 li:hover {
+  color: white;
+  background: #b0c6f0;         
+  transform: translateY(-5px);
+}
+
+.materials-container5 li a {
+  text-decoration: none;
+  color: black;             
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.materials-container5 li:hover a {
+  color: black;            
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* تالته ثانوي القسم الادبي */
+.materials6 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.materials6 .h2 {
+  font-size: 28px;
+  color: #ffffff;             
+  background-color: #673ab7;   /* بنفسجي غامق للترويسة */
+  padding: 15px 90px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+}
+
+.materials6:hover .h2 {
+  background-color: #512da8;  /* هوفر بنفسجي أغمق */
+}
+
+.materials-container6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.materials-container6 ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.materials-container6 li {
+  background: #ff9800;        /* برتقالي للبطاقة */
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 30px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  min-width: 180px;
+}
+
+.materials-container6 li:hover {
+  color: white;
+  background: #f57c00;        /* هوفر برتقالي غامق */
+  transform: translateY(-5px);
+}
+
+.materials-container6 li a {
+  text-decoration: none;
+  color: #000;                 
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.materials-container6 li:hover a {
+  color: white;              
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* زر عشان لما حد يعمل اسكرول */
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: white;
+  border: none;
+  outline: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#scrollTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#scrollTopBtn:hover {
+  transform: scale(1.2) rotate(-10deg);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+#scrollTopBtn .arrow {
+  display: inline-block;
+  animation: bounce 1.2s infinite;
+}
+
+/* حركة بسيطة للسهم */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+>>>>>>> 091232105b95c2c5c310e0f3ee2ba2863dc7d166
 }

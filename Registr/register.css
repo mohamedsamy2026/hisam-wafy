@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* تنسيق عام للصفحة */
 body {
   font-family: "Cairo", Arial, sans-serif;
@@ -75,3 +76,82 @@ h2 {
 .btn:hover {
   background: #45a049;
 }
+=======
+/* تنسيق عام للصفحة */
+body {
+  font-family: "Cairo", Arial, sans-serif;
+  direction: rtl; /* عرض الصفحة من اليمين لليسار */
+  background: linear-gradient(135deg, #4CAF50, #2c6e49);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* صندوق النموذج */
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* العنوان */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* مجموعة الإدخال */
+.input-group {
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+/* العناوين فوق الحقول */
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+/* الحقول */
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #4CAF50;
+}
+
+/* زر التسجيل */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+>>>>>>> 091232105b95c2c5c310e0f3ee2ba2863dc7d166
