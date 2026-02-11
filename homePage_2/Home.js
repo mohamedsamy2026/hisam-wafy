@@ -124,6 +124,17 @@
     applyMode(next, true);
   }
 
+
+
+
+
+
+
+
+
+
+
+
   function applyMode(mode, save){
     if(mode === 'dark-mode'){
       body.classList.remove('light-mode'); body.classList.add('dark-mode');
@@ -224,12 +235,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// زر بتاع الاسكرول
+
+
+
+
+
 
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 window.addEventListener("scroll", function() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (window.scrollY > 300) {
     scrollTopBtn.classList.add("show");
   } else {
     scrollTopBtn.classList.remove("show");
@@ -239,3 +254,11 @@ window.addEventListener("scroll", function() {
 scrollTopBtn.addEventListener("click", function() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+
+
+
+
+
+
+
