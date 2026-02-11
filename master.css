@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* جعل النصوص بالعربية من اليمين لليسار */
 body {
   font-family: "Cairo", Arial, sans-serif;
@@ -76,7 +75,6 @@ p {
   transform: translateY(1px);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
-=======
 /* جعل النصوص بالعربية من اليمين لليسار */
 body {
   font-family: "Cairo", Arial, sans-serif;
@@ -154,4 +152,3 @@ p {
   transform: translateY(1px);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
->>>>>>> 091232105b95c2c5c310e0f3ee2ba2863dc7d166
